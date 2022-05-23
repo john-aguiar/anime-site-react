@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    box-sizing: border-box;
+    background-color: #151F2E;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+}
+
+header nav ul {
+    display: flex;
+    float: left;
+    list-style-type: none;
+}
+
+.animelist-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #151F4a;
+    color: #fff;
+    padding: 2em;
+    width: 900px;
+}
+
+.side-animes {
+    width: 340px;
+}
+
+
+.anime-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 144px;
+    margin: 5px 10px;  
+}
+
+.anime-card span {
+    font-size: 14px
+}
+
+.cover-img{
+    width: 144px;
+    border-radius: 7px;
+}
