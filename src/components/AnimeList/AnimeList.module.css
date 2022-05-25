@@ -1,0 +1,28 @@
+
+.animelist_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: #fff;
+    width: 860px;
+}
+
+.anime_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 5px 10px;  
+    cursor: pointer;
+}
+
+.anime_card span {
+    font-size: 14px
+}
+
+.cover_img{
+    width: 144px;
+    border-radius: 7px;
+}
