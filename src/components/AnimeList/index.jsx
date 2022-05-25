@@ -3,10 +3,11 @@ import { useContext, useEffect, useState } from 'react'
 
 
 
+
 export const AnimeList = (  )=> {
     const [url, setUrl] = useState('https://api.aniapi.com/v1/anime?&page=1&per_page=50');
     const [animeList, setAnimeList] = useState([])
-   
+
 
     const loadAnimes = async () => {
       let response = await fetch(url);
@@ -15,11 +16,9 @@ export const AnimeList = (  )=> {
   // Retorna um array de objetos
     }
 
-    function clickAnimeLoad(id){
-        setLoadSelectedAnime(`https://api.aniapi.com/v1/anime/${id}`)
-        return loadSelectedAnime;
-        console.log(loadSelectedAnime)
-    }
+      function clickAnimeLoad(id){        
+        console.log(`https://api.aniapi.com/v1/anime/${id}`)
+      }
 
     useEffect(()=>{
         loadAnimes()
@@ -39,6 +38,7 @@ export const AnimeList = (  )=> {
 
     return(
         <div className={styles.animelist_container}>
+       
            {animeList.map((item, key)=>(
             <div onClick={()=>clickAnimeLoad(item.id)} key={key} className={styles.anime_card}>
                 <img className={styles.cover_img} src={item.cover_image} alt={item.titles.en} />
