@@ -9,7 +9,6 @@
 .anime_side_card {
     box-sizing: border-box;
     position: relative;
-    width: 300px;
     height: 90px;
     margin-bottom: 20px;
     cursor: pointer;
@@ -34,4 +33,14 @@
     background-image: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7));
     background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.7));
     width: 292.3px;
+}
+
+@media screen and (max-width: 1200px){
+    .side_animes {
+        padding: 10px;
+        bakcground-color: purple;
+    }
+    .anime_side_card {
+
+    }
 }

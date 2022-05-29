@@ -24,7 +24,6 @@ main {
     box-sizing: border-box;
     display: flex;
     background-color: rgba(4, 4, 4, 0.75);
-    width: 1200px;
-    padding:  20px;
+
 }
 
